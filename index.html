@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Documentation and Standards Team</title>
+		<title>Lighthouse Mobile</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -37,323 +37,96 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Documentation and Standards</h1>
-					<h3>A team for maintaining standards across all developers and documentation across all NBCUTech teams</h3>
+					<img src="img/lighthouse-logo.png" alt="lighthouse-logo" width="100%" height="auto" class="clean">
 				</section>
 
 				<section>
-					<h2>Team Members</h2>
-					<dl>
-						<dt>Manager</dt>
-						<dd>Scott N</dd>
-						<dt>Development Lead</dt>
-						<dd>Sam R</dd>
-						<dt>Documentation Lead</dt>
-						<dd>Ramesh R</dd>
-						<dt>Project Manager</dt>
-						<dd>open</dd>
-						<dt>Developers</dt>
-						<dd>open</dd>
-					</dl>
-					
-				</section>
-				
-				<section>
 					<section>
-						<h2>Responsibilities</h2>
+						<h2>Technology</h2>
+						<p>What's under the hood?</p>
+					</section>
+					
+					<section>
+						<table><tr><td width="50%"><img src="img/angularjs-logo.png" alt="angularjs-logo"></td><td width="50%"><img src="img/drupal_branding_2012.jpg" alt="drupal-logo"></td></tr></table>
+					</section>
+					<section>
+						<h2>AngularJS + Drupal</h2>
+						<img src="img/drupal-angular-architecture.png" alt="drupal-angular-architecture" class="clean">
+					</section>
+					
+					<section>
+						<h2>PhantomJS</h2>
+						<div class="split-two"><img src="img/phantomjs.png" alt="phantomjs" class="clean" width="75%" height="auto"></div>
+						<div class="split-two">
+							<ul style="padding-top: 60px">
+								<li>Headless browser</li>
+								<li>Deployed on multiple servers</li>
+								<li>Use multiple proxies</li>
+								<li>Open and available for apps beyond Lighthouse Mobile</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section>
+						<img src="img/gfm-logo.png" alt="gfm-logo" width="100%" height="auto" class="clean">
 						
-						<ul>
-							<li>Developer Setup</li>
-							<li>Coding Standards</li>
-							<li>Documentation</li>
-							<li>Tracking Systems</li>
-						</ul>
-					</section>
-					
-					<section>
-						<h2>Developer Setup</h2>
-						<p>Maintains tools and standards across all developers and vendors</p>
-						<p class="fragment">Responsibilities include:</p>
-						<ol>
-							<li class="fragment"><strong>Owns development setup</strong> process and tools</li>
-							<li class="fragment">Works with tech leads to <strong>ensure developers are set up correctly</strong> on each implementation project</li>
-							<li class="fragment">Works with vendors to <strong>get vendor team members access</strong> to our systems and documentation</li>
-							<li class="fragment">Maintains <strong>records and documentation</strong> for development setup</li>
-						</ol>
-					</section>
-					
-					<section>
-						<h2>Coding Standards</h2>
-						<p>Enforce, automate, and document coding standards.</p>
-						<p class="fragment">Responsibilities include:</p>
-						<ol>
-							<li class="fragment"><strong>Coordinates work of architects</strong> into cohesive standards requirements</li>
-							<li class="fragment">Maintains and develops <strong>standards-supporting tools</strong></li>
-						</ol>
-					</section>
-					
-					<section>
-						<h2>Documentation</h2>
-						<p>Collect and present documentation across all NBCUTech teams</p>
-						<p class="fragment">Responsibilities include:</p>
-						<ol>
-							<li class="fragment">Provides a <strong>unified documentation</strong> interface/service</li>
-							<li class="fragment">Owns <strong>documentation technology</strong></li>
-						</ol>
-					</section>
-					
-					<section>
-						<h2>Tracking Systems</h2>
-						<p>Facilitate internal tracking of properties and employees</p>
-						<p class="fragment">Responsibilities include:</p>
-						<ol>
-							<li class="fragment">Maintains a <strong>complete list of all sites</strong> with <em>detailed information and live stats</em> on each property</li>
-							<li class="fragment">Creates and maintains an <strong>employee-tracking system</strong></li>
-							<li class="fragment">Owns and maintains cross-team and cross-brand <strong>ticket tracking system</strong></li>
-							<li class="fragment">Expand <strong>Ideas and Feedback</strong> system</li>
-						</ol>
+							<div class="split-two-space fragment pop">
+						<pre>
+### Defining a JSON object  
+If the JSON object has more than one property, define it as multiple lines.  
+
+#### Before
+```$scope.control.cclist = [{ccname:$scope.cc, highlightClass:'unchecked', done:false}];```
+
+#### After
+```
+$scope.control.cclist = [{
+  ccname: $scope.cc,
+  highlightClass: 'unchecked',
+  done: false
+}];
+```  
+
+***
+						</pre>
+						</div>
+						<div class="split-two-space fragment pop">
+							<h3>Defining a JSON object</h3>
+							
+							<p>If the JSON object has more than one property, define it as multiple lines.  </p>
+							
+							<h4>Before</h4>
+							
+							<pre><code>$scope.control.cclist = [{ccname:$scope.cc, highlightClass:'unchecked', done:false}];  
+							</code></pre>
+							
+							<h4>After</h4>
+							
+							<pre><code>$scope.control.cclist = [{
+							ccname: $scope.cc,
+							highlightClass: 'unchecked',
+							done: false
+							}];  
+							</code></pre>
+							
+							<hr>
+
 					</section>
 						
 				</section>
 
-				
-				<section class="raci-chart">
-				
-					<div class="skew-table">
-					<h2>RACI Chart</h2>
-					    <table border="0" cellpadding="0" cellspacing="0">
-							<thead>
-						        <tr dir='ltr'>
-						
-						            <td class='s0 empty'></td>
-						
-						            <th class="skew" dir='ltr'><div class="odd"><span>Manager</span></div></td>
-						
-						            <th class="skew" dir='ltr'><div class=""><span>Dev Lead</span></div></td>
-						
-						            <th class="skew" dir='ltr'><div class="odd"><span>Doc Lead</span></div></td>
-						
-						            <th class="skew" dir='ltr'><div class=""><span>Proj Manager</span></div></td>
-						
-						            <th class="skew" dir='ltr'><div class="odd"><span>Developers</span></div></td>
-						        </tr>
-						    </thead>
-					
-							<tbody>
-					        <tr dir='ltr'>
-					
-					            <th class='s3' colspan="6" dir='ltr'>Developer Setup</th>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <td class='s4' dir='ltr'>Own Process and Docs</td>
-					
-					            <td class='s5 odd' dir='ltr'>C</td>
-					
-					            <td class='s5' dir='ltr'>A</td>
-					
-					            <td class='s5 odd' dir='ltr'>C</td>
-					
-					            <td>I</td>
-					
-					            <td class=" odd">I</td>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <td class='s4' dir='ltr'>Work with Leads</td>
-					
-					            <td class='s5 odd' dir='ltr'>AR</td>
-					
-					            <td class='s5' dir='ltr'>C</td>
-					
-					            <td class=" odd">I</td>
-					
-					            <td>I</td>
-					
-					            <td class=" odd">R</td>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <td class='s4' dir='ltr'>Work with Vendors</td>
-					
-					            <td class='s5 odd' dir='ltr'>AR</td>
-					
-					            <td class='s5' dir='ltr'>C</td>
-					
-					            <td class=" odd">I</td>
-					
-					            <td>I</td>
-					
-					            <td class=" odd">R</td>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <td class='s4' dir='ltr'>Maintain Records</td>
-					
-					            <td class='s5 odd' dir='ltr'>I</td>
-					
-					            <td class='s5' dir='ltr'>R</td>
-					
-					            <td class='s5 odd' dir='ltr'>A</td>
-					
-					            <td></td>
-					
-					            <td class='s5 odd' dir='ltr'>R</td>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <th class='s3' colspan="6" dir='ltr'>Coding Standards</th>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <td class='s4' dir='ltr'>Coordinates</td>
-					
-					            <td class='s5 odd' dir='ltr'>A</td>
-					
-					            <td class='s5' dir='ltr'>R</td>
-					
-					            <td class=" odd">R</td>
-					
-					            <td>I</td>
-					
-					            <td class=" odd">&nbsp;</td>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <td class='s4' dir='ltr'>Maintains Tools</td>
-					
-					            <td class='s5 odd' dir='ltr'>I</td>
-					
-					            <td class='s5' dir='ltr'>C</td>
-					
-					            <td class='s5 odd' dir='ltr'>A</td>
-					
-					            <td class='s5' dir='ltr'>I</td>
-					
-					            <td class='s5 odd' dir='ltr'>R</td>
-					        </tr>
-					        
-					        <tr dir='ltr'>
-					
-					            <th class='s3' colspan="6" dir='ltr'>Documentation</th>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <td class='s4' dir='ltr'>Build System</td>
-					
-					            <td class='s5 odd' dir='ltr'>C</td>
-					
-					            <td class='s5' dir='ltr'>R</td>
-					
-					            <td class=" odd">&nbsp;</td>
-					
-					            <td class='s5' dir='ltr'>A</td>
-					
-					            <td class='s5 odd' dir='ltr'>R</td>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <td class='s4' dir='ltr'>System Ownership</td>
-					
-					            <td class='s5 odd' dir='ltr'>A</td>
-					
-					            <td>C</td>
-					
-					            <td class=" odd">C</td>
-					
-					            <td>R</td>
-					
-					            <td class=" odd">R</td>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <th class='s3' colspan="6" dir='ltr'>Tracking</th>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <td class='s4' dir='ltr'>Sites</td>
-					
-					            <td class='s5 odd' dir='ltr'>A</td>
-					
-					            <td></td>
-					
-					            <td class='s5 odd' dir='ltr'>R</td>
-					
-					            <td></td>
-					
-					            <td class=" odd">&nbsp;</td>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <td class='s4' dir='ltr'>Tickets</td>
-					
-					            <td class=" odd">C</td>
-					
-					            <td></td>
-					
-					            <td class=" odd">&nbsp;</td>
-					
-					            <td>A</td>
-					
-					            <td class=" odd">R</td>
-					        </tr>
-					
-					        <tr dir='ltr'>
-					
-					            <td class='s4' dir='ltr'>Employees</td>
-					
-					            <td class='s5 odd' dir='ltr'>A</td>
-					
-					            <td></td>
-					
-					            <td class=" odd">&nbsp;</td>
-					
-					            <td></td>
-					
-					            <td class=" odd">&nbsp;</td>
-					        </tr>
-							</tbody>
-					    </table>
-					</div>					
-					
-				</section>
-				
 				<section>
-					<h2>Timeline</h2>
+					<h2>Future Planning</h2>
 					<ul>
-						<li>2013 Q4<ul>
-							<li>Lighthouse Mobile beta complete</li>
-						</ul></li>
-						<li>2014 Q1<ul>
-							<li>Identify and document developer setup and coding standards</li>
-							<li>Insure all cross-team documentation found via unified cross-team docs website</li>
-							<li>Complete requirements phase for docs system</li>
-						</ul></li>
-						<li>2014 Q2<ul>
-							<li>Implement required coding standards tools across all developers</li>
-							<li>Completion of one-page sites status system</li>
-						</ul></li>
-						<li>2014 Q3<ul>
-							<li>Profit</li>
-						</ul></li>
-					</ul>
+						<li class="fragment">@Person addressing</li>
+						<li class="fragment">URL Comparison</li>
+						<li class="fragment">Sites DB integration</li>
+						<li class="fragment">Ticket Templates</li>
 				</section>
 				
 				<section>
-					<h1>THE END</h1>
-					<h3>BY Scott Nath</h3>
+					
+					<img src="img/lighthouse-logo.png" alt="lighthouse-logo" width="100%" height="auto" class="clean">
 				</section>
 
 			</div>
