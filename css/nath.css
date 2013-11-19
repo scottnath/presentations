@@ -1,0 +1,148 @@
+
+.reveal dl {
+	display: inline-block;
+
+	text-align: left;
+	margin: 0 0 0 0;
+}
+.reveal dt{
+	font-weight: bold;
+}
+.reveal dd {
+	display: block;
+	margin-left: 40px;
+	padding: 0 0 10px 0;
+}
+
+.raci-chart{
+	font-size: .7em !important;
+	padding: 0 !important;
+	margin-top: -50px !important;
+	position: relative;
+}
+.raci-chart h2{
+	position: absolute;
+	right: 50px;
+	top: 50%;
+}
+/* skewed table from:
+http://s-church.net/Blog/Entry/464
+*/
+
+.skew-table .empty{
+	border: none;
+}
+
+.skew-table  th {
+	font-weight: bold;
+	}
+.skew-table tbody th {
+	text-align: left;
+	
+    border-top: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    padding: 10px 6px 6px;
+    font-size: .7em;
+    
+	}
+	
+.skew-table table th.skew {
+    height: 140px;
+    width: 60px;
+    position: relative;
+    vertical-align: bottom;
+    white-space: nowrap;
+    font-size: .7em;
+    text-align: left;
+}
+ 
+.skew-table table th.skew > div {
+    position: relative;
+    top: 0px;
+    left: 76px;
+    height: 100%;
+    transform:skew(-45deg,0deg);
+    -ms-transform:skew(-45deg,0deg);
+    -moz-transform:skew(-45deg,0deg);
+    -webkit-transform:skew(-45deg,0deg);
+    -o-transform:skew(-45deg,0deg);    
+    overflow: hidden;
+    border-top: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+}
+ 
+.skew-table table th.skew span {
+    transform:skew(45deg,0deg) rotate(315deg);
+    -ms-transform:skew(45deg,0deg) rotate(315deg);
+    -moz-transform:skew(45deg,0deg) rotate(315deg);
+    -webkit-transform:skew(45deg,0deg) rotate(315deg);
+    -o-transform:skew(45deg,0deg) rotate(315deg);        
+    position: absolute;
+    bottom: 15px;
+    left: 1px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+ 
+.skew-table table td {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #CCCCCC;
+    font-size: .6em;
+}
+.skew-table table td.s4 {
+	white-space: nowrap;
+	text-align: left;
+	padding: 3px 8px 3px 8px;
+	font-size: .7em;
+	}
+ 
+.skew-table table td a {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+ 
+.skew-table table td.project-name {
+    width: auto;
+    text-align: right;
+    font-weight: bold;
+    border: none;
+    padding-right: 8px;
+}
+ 
+.skew-table table .odd {
+    background-color: #E8E8E8;
+    color: #000;
+}
+
+.reveal section img.clean{
+	border: none;
+	background: none;
+	box-shadow: none;
+}
+.reveal section .split-two{
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}
+.reveal section .split-two-space{
+	width: 42%;
+	float: left;
+	margin: 3%;
+}
+.reveal section .pop{
+	background: white;
+	box-shadow: none;
+	text-align: left;
+	font-size: .7em;
+	padding: 1%;
+}
+.reveal section .pop pre{
+	box-shadow: none;
+	}

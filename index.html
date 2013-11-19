@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Lighthouse Mobile</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+		<link rel="stylesheet" href="css/nath.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<img src="img/lighthouse-logo.png" alt="lighthouse-logo" width="100%" height="auto" class="clean">
+				</section>
+
+				<section>
+					<section>
+						<h2>Technology</h2>
+						<p>What's under the hood?</p>
+					</section>
+					
+					<section>
+						<table><tr><td width="50%"><img src="img/angularjs-logo.png" alt="angularjs-logo"></td><td width="50%"><img src="img/drupal_branding_2012.jpg" alt="drupal-logo"></td></tr></table>
+					</section>
+					<section>
+						<h2>AngularJS + Drupal</h2>
+						<img src="img/drupal-angular-architecture.png" alt="drupal-angular-architecture" class="clean">
+					</section>
+					
+					<section>
+						<h2>PhantomJS</h2>
+						<div class="split-two"><img src="img/phantomjs.png" alt="phantomjs" class="clean" width="75%" height="auto"></div>
+						<div class="split-two">
+							<ul style="padding-top: 60px">
+								<li>Headless browser</li>
+								<li>Deployed on multiple servers</li>
+								<li>Use multiple proxies</li>
+								<li>Open and available for apps beyond Lighthouse Mobile</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section>
+						<img src="img/gfm-logo.png" alt="gfm-logo" width="100%" height="auto" class="clean">
+						
+							<div class="split-two-space fragment pop">
+						<pre>
+### Defining a JSON object  
+If the JSON object has more than one property, define it as multiple lines.  
+
+#### Before
+```$scope.control.cclist = [{ccname:$scope.cc, highlightClass:'unchecked', done:false}];```
+
+#### After
+```
+$scope.control.cclist = [{
+  ccname: $scope.cc,
+  highlightClass: 'unchecked',
+  done: false
+}];
+```  
+
+***
+						</pre>
+						</div>
+						<div class="split-two-space fragment pop">
+							<h3>Defining a JSON object</h3>
+							
+							<p>If the JSON object has more than one property, define it as multiple lines.  </p>
+							
+							<h4>Before</h4>
+							
+							<pre><code>$scope.control.cclist = [{ccname:$scope.cc, highlightClass:'unchecked', done:false}];  
+							</code></pre>
+							
+							<h4>After</h4>
+							
+							<pre><code>$scope.control.cclist = [{
+							ccname: $scope.cc,
+							highlightClass: 'unchecked',
+							done: false
+							}];  
+							</code></pre>
+							
+							<hr>
+
+					</section>
+						
+				</section>
+
+				<section>
+					<h2>Future Planning</h2>
+					<ul>
+						<li class="fragment">@Person addressing</li>
+						<li class="fragment">URL Comparison</li>
+						<li class="fragment">Sites DB integration</li>
+						<li class="fragment">Ticket Templates</li>
+				</section>
+				
+				<section>
+					
+					<img src="img/lighthouse-logo.png" alt="lighthouse-logo" width="100%" height="auto" class="clean">
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
