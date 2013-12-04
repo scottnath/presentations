@@ -1,18 +1,5 @@
 
-.reveal dl {
-	display: inline-block;
 
-	text-align: left;
-	margin: 0 0 0 0;
-}
-.reveal dt{
-	font-weight: bold;
-}
-.reveal dd {
-	display: block;
-	margin-left: 40px;
-	padding: 0 0 10px 0;
-}
 
 .raci-chart{
 	font-size: .7em !important;
@@ -121,28 +108,3 @@ http://s-church.net/Blog/Entry/464
     color: #000;
 }
 
-.reveal section img.clean{
-	border: none;
-	background: none;
-	box-shadow: none;
-}
-.reveal section .split-two{
-	width: 50%;
-	float: left;
-	overflow: hidden;
-}
-.reveal section .split-two-space{
-	width: 42%;
-	float: left;
-	margin: 3%;
-}
-.reveal section .pop{
-	background: white;
-	box-shadow: none;
-	text-align: left;
-	font-size: .7em;
-	padding: 1%;
-}
-.reveal section .pop pre{
-	box-shadow: none;
-	}
